@@ -1,5 +1,5 @@
 // One page, three languages: the browser's language picks one (?lang=pt|en|es overrides), the buttons switch.
-const EMAIL = "suporte@exemplo.com";   // TODO: the support email shown on both pages
+const EMAIL = "hello@viniciusramos.com";   // the support email shown on both pages
 
 document.querySelectorAll("a.email").forEach(a => { a.href = "mailto:" + EMAIL; a.textContent = EMAIL; });
 
