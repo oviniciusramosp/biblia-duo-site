@@ -45,3 +45,70 @@ a { color: var(--rubric); }
 }
 .langs button[aria-pressed="true"] { background: var(--gold); color: #1c1a19; }
 article[hidden] { display: none; }
+
+/* Landing page (build.py): the book on leather, gold headings */
+body.landing {
+  padding: 0;
+  color: #efe6d2;
+  background: radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255, 226, 170, 0.10), transparent 70%), var(--leather);
+}
+.landing a { color: var(--gold); }
+.landing .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+.landing .langs { padding-top: 20px; }
+.landing .langs a {
+  font: 600 13px/1 -apple-system, system-ui, sans-serif;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 7px 12px;
+  color: #efe6d2;
+  text-decoration: none;
+}
+.landing .langs a[aria-current] { background: var(--gold); color: var(--leather); }
+.hero { text-align: center; padding: 40px 0 8px; }
+.app-icon {
+  position: relative;
+  width: 96px; height: 96px;
+  margin: 0 auto 20px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 30%, #3a3532, #171515 75%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.app-icon img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.landing h1, .landing h2 {
+  font-family: Baskerville, ui-serif, serif;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: transparent;
+  background: linear-gradient(180deg, #f7e2a6, #d9b25c 45%, #a9802f);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.landing h1 { font-size: clamp(2.6rem, 8vw, 4.4rem); margin: 0; }
+.landing h2 { font-size: clamp(1.5rem, 3.4vw, 2.2rem); margin: 0 0 0.4em; }
+.tagline { font-size: clamp(1.15rem, 2.8vw, 1.5rem); max-width: 28ch; margin: 0.3em auto 1em; color: rgba(239, 230, 210, 0.9); }
+.badge img { display: block; margin: 0 auto 16px; }
+.facts { font: 600 12px/1.5 -apple-system, system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.book { display: block; width: 100%; height: auto; margin-top: 16px; }
+.landing section { padding: 56px 0; border-top: 1px solid rgba(201, 162, 78, 0.25); }
+.landing section:first-child { border-top: 0; }
+.feature { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: center; }
+.feature.flip { grid-template-columns: 1.4fr 1fr; }
+.feature.flip > div { order: 2; }
+.feature figure { margin: 0; }
+.feature img { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); }
+.feature.portrait img { max-width: 300px; margin: 0 auto; border-radius: 28px; }
+.landing section p { color: rgba(239, 230, 210, 0.85); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.cards div { padding: 22px; border: 1px solid rgba(201, 162, 78, 0.3); border-radius: 16px; background: rgba(255, 255, 255, 0.03); }
+.cards h3 { margin: 0 0 0.3em; color: #efe6d2; }
+.translations ul { margin: 0.6em 0; padding-left: 1.2em; }
+.cta { text-align: center; }
+.cta p { margin-bottom: 1.2em; }
+footer.site { padding: 32px 16px 48px; border-top: 1px solid rgba(201, 162, 78, 0.25); font-size: 0.8em; color: rgba(239, 230, 210, 0.6); }
+@media (max-width: 760px) {
+  .feature, .feature.flip { grid-template-columns: 1fr; gap: 24px; }
+  .feature.flip > div { order: 0; }
+  .landing section { padding: 40px 0; }
+  .cards { grid-template-columns: 1fr; }
+}
