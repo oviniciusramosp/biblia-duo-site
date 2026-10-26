@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Writes the landing page in three languages (index.html, pt/index.html, es/index.html) and sitemap.xml.
 One URL per language, so search engines can index each and link them with hreflang.
-usage: python3 build.py   (then commit the generated files; GitHub Pages serves them as they are)"""
+usage: python3 build.py   (then commit the generated files; GitHub Pages serves them as they are)
+Images (img/<lang>/) are the app's real captures from biblia-duo-ios/AppStore/raw, converted with ffmpeg to WebP;
+book.webp is the text-free open Bible on leather (the page puts its own title beside it), og.jpg the link preview."""
 import html, json, os
 
 BASE = "https://oviniciusramosp.github.io/biblia-duo-site/"
