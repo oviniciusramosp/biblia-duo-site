@@ -14,8 +14,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # path: where the page lives; badge: Apple's badge locale; lang: the images and the support/privacy ?lang=
 PAGES = {
     "en": dict(path="", html_lang="en", og_locale="en_US", badge="en-us", currency="USD",
-               name="Bible Duo: Holy Scripture", short="Bible Duo",
-               title="Bible Duo — the Holy Bible as a real book, for iPhone Duo",
+               name="Foldable Bible: Holy Scripture", short="Foldable Bible",
+               title="Foldable Bible — the Holy Bible as a real book, for iPhone Duo",
                description="The complete Holy Bible as a real book on iPhone Duo: two pages, gilded edges and pages you turn "
                            "by hand. King James Version. Free, no ads, works offline.",
                tagline="The Bible like a real book, made for iPhone Duo.",
@@ -25,7 +25,7 @@ PAGES = {
                sections=[
                    ("Closed, the cover. Open, the book.",
                     "With iPhone Duo closed, the outer display shows your Bible's leather cover. Swipe it open and read one "
-                    "page at a time. Unfold your Duo and the Bible lies open on two pages, like the one on your nightstand.",
+                    "page at a time. Unfold your iPhone Duo and the Bible lies open on two pages, like the one on your nightstand.",
                     "cover", "The Bible's leather cover on the iPhone Duo outer display"),
                    ("Turn pages by hand",
                     "Pages curl under your finger, with the light and shadow of paper. The gilded edges show how far you've "
@@ -50,14 +50,14 @@ PAGES = {
                translations=["English: King James Version (KJV)", "Português: Bíblia Livre, based on the Almeida translation",
                              "Español: Reina-Valera 1909"],
                translations_note="Old and New Testament, all 66 books. Switch the language in Settings.",
-               cta_title="Get Bible Duo",
+               cta_title="Get Foldable Bible",
                cta="Free on the App Store. Made only for iPhone Duo, with iOS 27.1 or later.",
                credits="Bible texts: King James Version and Reina-Valera 1909 (public domain); Bíblia Livre © 2018 Diego "
                        "Santos, Mario Sérgio and Marco Teles (CC BY 4.0). Texts via eBible.org.",
                legal="Apple, the Apple logo and iPhone are trademarks of Apple Inc. App Store is a service mark of Apple Inc."),
     "pt": dict(path="pt/", html_lang="pt-BR", og_locale="pt_BR", badge="pt-br", currency="BRL",
-               name="Bíblia Duo: Sagrada Escritura", short="Bíblia Duo",
-               title="Bíblia Duo — a Bíblia Sagrada como um livro, para iPhone Duo",
+               name="Bíblia Sagrada Fold", short="Bíblia Sagrada Fold",
+               title="Bíblia Sagrada Fold — a Bíblia Sagrada como um livro, para iPhone Duo",
                description="A Bíblia Sagrada completa como um livro de verdade no iPhone Duo: duas páginas, bordas douradas e "
                            "folhas que viram com o dedo. Grátis, sem anúncios e sem internet.",
                tagline="A Bíblia como um livro de verdade, feita para o iPhone Duo.",
@@ -67,7 +67,7 @@ PAGES = {
                sections=[
                    ("Fechado, a capa. Aberto, o livro.",
                     "Com o iPhone Duo fechado, a tela de fora mostra a capa de couro da sua Bíblia. Deslize para abrir e leia "
-                    "uma página de cada vez. Abra o Duo e a Bíblia aparece aberta em duas páginas, como aquela que fica na "
+                    "uma página de cada vez. Abra o iPhone Duo e a Bíblia aparece aberta em duas páginas, como aquela que fica na "
                     "cabeceira.",
                     "cover", "A capa de couro da Bíblia na tela externa do iPhone Duo"),
                    ("Vire a página com o dedo",
@@ -94,15 +94,15 @@ PAGES = {
                translations=["Português: Bíblia Livre, tradução baseada na Almeida", "English: King James Version (KJV)",
                              "Español: Reina-Valera 1909"],
                translations_note="Antigo e Novo Testamento, os 66 livros. O idioma muda nos Ajustes.",
-               cta_title="Baixe a Bíblia Duo",
+               cta_title="Baixe a Bíblia Sagrada Fold",
                cta="Grátis na App Store. Feita só para o iPhone Duo, com iOS 27.1 ou posterior.",
                credits="Textos bíblicos: Bíblia Livre © 2018 Diego Santos, Mario Sérgio e Marco Teles (CC BY 4.0); King James "
                        "Version e Reina-Valera 1909 (domínio público). Textos via eBible.org.",
                legal="Apple, o logotipo da Apple e iPhone são marcas comerciais da Apple Inc. App Store é uma marca de "
                      "serviço da Apple Inc."),
     "es": dict(path="es/", html_lang="es", og_locale="es_MX", badge="es-mx", currency="USD",
-               name="Biblia Duo: Santa Escritura", short="Biblia Duo",
-               title="Biblia Duo — la Santa Biblia como un libro, para iPhone Duo",
+               name="Santa Biblia Fold", short="Santa Biblia Fold",
+               title="Santa Biblia Fold — la Santa Biblia como un libro, para iPhone Duo",
                description="La Santa Biblia completa como un libro de verdad en el iPhone Duo: dos páginas, cantos dorados y "
                            "hojas que pasas con el dedo. Reina-Valera 1909. Gratis, sin anuncios y sin internet.",
                tagline="La Biblia como un libro de verdad, hecha para el iPhone Duo.",
@@ -112,7 +112,7 @@ PAGES = {
                sections=[
                    ("Cerrado, la cubierta. Abierto, el libro.",
                     "Con el iPhone Duo cerrado, la pantalla exterior muestra la cubierta de piel de tu Biblia. Deslízala para "
-                    "abrirla y lee una página a la vez. Abre el Duo y la Biblia aparece abierta en dos páginas, como la que "
+                    "abrirla y lee una página a la vez. Abre el iPhone Duo y la Biblia aparece abierta en dos páginas, como la que "
                     "tienes junto a la cama.",
                     "cover", "La cubierta de piel de la Biblia en la pantalla exterior del iPhone Duo"),
                    ("Pasa la página con el dedo",
@@ -139,7 +139,7 @@ PAGES = {
                translations=["Español: Reina-Valera 1909", "English: King James Version (KJV)",
                              "Português: Bíblia Livre, basada en la traducción Almeida"],
                translations_note="Antiguo y Nuevo Testamento, los 66 libros. El idioma se cambia en Ajustes.",
-               cta_title="Descarga Biblia Duo",
+               cta_title="Descarga Santa Biblia Fold",
                cta="Gratis en la App Store. Hecha solo para el iPhone Duo, con iOS 27.1 o posterior.",
                credits="Textos bíblicos: Reina-Valera 1909 y King James Version (dominio público); Bíblia Livre © 2018 Diego "
                        "Santos, Mario Sérgio y Marco Teles (CC BY 4.0). Textos vía eBible.org.",
